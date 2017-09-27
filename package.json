@@ -21,7 +21,9 @@
     "analyze:json": "webpack-bundle-size-analyzer bundle-stats.json",
     "lint:fix": "npm run test:dev:lint -- --fix",
     "prettier": "prettier --single-quote --write",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "pre-commit": [
     "test:stylelint",
@@ -67,24 +69,24 @@
     "babel-register": "6.11.6",
     "babel-runtime": "6.11.6",
     "babili-webpack-plugin": "^0.0.11",
-    "body-parser": "1.15.2",
+    "body-parser": "1.18.2",
     "bootstrap-loader": "^2.1.0",
     "bootstrap-sass": "3.3.7",
     "bundle-loader": "0.5.4",
     "cache-manager": "1.5.0",
     "caniuse-db": "1.0.30000613",
     "clean-webpack-plugin": "0.1.10",
-    "compression": "1.6.2",
+    "compression": "1.7.1",
     "compression-webpack-plugin": "0.3.2",
     "cookie-parser": "1.4.3",
     "copy-to-clipboard": "3.0.5",
     "cors": "2.7.1",
     "css-loader": "0.26.1",
     "cssnano": "3.10.0",
-    "debug": "2.2.0",
+    "debug": "2.6.9",
     "dotenv": "2.0.0",
     "errorhandler": "1.4.3",
-    "express": "4.14.0",
+    "express": "4.15.5",
     "express-state": "1.4.0",
     "express-useragent": "1.0.4",
     "extract-text-webpack-plugin": "^2.1.0",
@@ -98,7 +100,7 @@
     "image-webpack-loader": "3.1.0",
     "imports-loader": "0.6.5",
     "json-loader": "0.5.4",
-    "morgan": "1.7.0",
+    "morgan": "1.9.0",
     "node-sass": "4.1.1",
     "normalizr": "3.0.2",
     "postcss-loader": "0.9.1",
@@ -129,7 +131,7 @@
     "react-router-redux": "4.0.7",
     "react-router-scroll": "0.2.1",
     "react-scroll": "1.2.0",
-    "react-share": "1.11.0",
+    "react-share": "1.13.2",
     "react-sidebar": "2.2.1",
     "redux": "3.5.2",
     "redux-connect": "5.0.0",
@@ -150,7 +152,8 @@
     "webpack-dev-middleware": "^1.10.2",
     "webpack-dev-server": "^2.4.5",
     "webpack-isomorphic-tools": "2.5.7",
-    "winston": "1.1.2"
+    "winston": "1.1.2",
+    "snyk": "^1.41.1"
   },
   "devDependencies": {
     "babel-eslint": "7.1.1",
@@ -204,5 +207,6 @@
     "webpack-dashboard": "^0.4.0",
     "webpack-dev-server": "2.1.0-beta.0",
     "webpack-hot-middleware": "2.12.2"
-  }
+  },
+  "snyk": true
 }
