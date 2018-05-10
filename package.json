@@ -86,7 +86,7 @@
     "errorhandler": "1.4.3",
     "express": "4.14.0",
     "express-state": "1.4.0",
-    "express-useragent": "1.0.4",
+    "express-useragent": "1.0.5",
     "extract-text-webpack-plugin": "^2.1.0",
     "file-loader": "0.8.5",
     "fontfaceobserver": "1.7.3",
