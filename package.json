@@ -21,7 +21,9 @@
     "analyze:json": "webpack-bundle-size-analyzer bundle-stats.json",
     "lint:fix": "npm run test:dev:lint -- --fix",
     "prettier": "prettier --single-quote --write",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "pre-commit": [
     "test:stylelint",
@@ -150,7 +152,8 @@
     "webpack-dev-middleware": "^1.10.2",
     "webpack-dev-server": "^2.4.5",
     "webpack-isomorphic-tools": "2.5.7",
-    "winston": "1.1.2"
+    "winston": "1.1.2",
+    "snyk": "^1.83.0"
   },
   "devDependencies": {
     "babel-eslint": "7.1.1",
@@ -204,5 +207,6 @@
     "webpack-dashboard": "^0.4.0",
     "webpack-dev-server": "2.1.0-beta.0",
     "webpack-hot-middleware": "2.12.2"
-  }
+  },
+  "snyk": true
 }
